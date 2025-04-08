@@ -1,0 +1,472 @@
+/* This section is for navigation */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+    background: #fff;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    padding: 0px 50px 0px 50px;
+}
+#menu {
+    margin-top: 10px;
+}
+#menu li {
+    display: inline;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#menu li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+#searchbox {
+    position: relative;
+    display: inline-block;
+}
+#searchbox input {
+    width: 100px;
+    padding: 8px 35px 8px 10px; /* Space for the icon */
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+#searchbox .material-symbols-outlined {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+#logo {
+    width: 203px;
+    float: left;
+}
+#logo img {
+    width: 52px;
+    margin-top: 3px;
+    float: left;
+}
+#logo h1 {
+    float: left;
+    margin-left: 1px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-style: sans-serif;
+    color: #4a9703;
+}
+
+#logo h1::first-line {
+    color: #030148;
+}
+#navmenu {
+    width: 570px;
+    float: left;
+    margin-left: 190px;
+}
+#logo, #navmenu {
+    margin-top: 20px;
+}
+#portal {
+    font-weight: bold;
+    background: rgb(13, 185, 13);
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 25px;
+    margin-left: 2px;
+    border: 0px;
+}
+#portal:hover {
+    background: rgb(13, 218, 13);
+}
+
+/* This section is for welcome box */
+
+#welcomebox {
+    width: 100%;
+    height: 600px;
+    border-bottom: 1px solid #000;
+    background-image: url("../images/3.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#innerbox {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 150px;
+}
+#welcomebox h1 {
+    font-size: 60px;
+}
+#welcomebox h4 {
+    font-size: 20px;
+    width: 380px;
+    margin-bottom: 20px;
+}
+button {
+    color: #fff;
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border: 0px;
+    cursor: pointer;
+}
+button {
+    background: blue;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#middlesection {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+#middlesection img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Colors */
+.green-text {
+    color: #4a9703;
+}
+
+.blue-text {
+    color: #030148;
+}
+
+/* Recover, Optimize, Insights */
+
+#r-o-i {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 60px;
+}
+
+#optimize {
+    height: 280px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+}
+
+.rec-ins {
+    height: 280px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+}
+
+.symbs {
+    height: 80px;
+    width: 80px;
+    margin-left: 70px;
+}
+
+.top-text-green {
+    color: #4a9703;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 9px;
+}
+
+#top-text-blue {
+    color: #030148;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 9px;
+}
+
+#description-text-rec {
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-top: 25px;
+    margin-left: 3px;
+    line-height: 23px;
+}
+
+#description-text-op {
+    width: 260px;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-top: 25px;
+    margin-left: 3px;
+    line-height: 23px;
+}
+
+#description-text-ins {
+    width: 260px;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-top: 25px;
+    margin-left: 3px;
+    line-height: 23px;
+}
+
+/* About Us */
+
+.bold {
+    font-weight: bold;
+}
+
+#about-us-container {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-color: azure;
+}
+
+#about-us-text-section {
+    display: flex;
+    width: 550px;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-top: 80px;
+}
+
+#about-us-image {
+    display: flex;
+    background-size: contain;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#about-us-title{
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+
+#par-1, #par-2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 23px;
+    margin-top: 20px;
+    font-size: 15.5px;
+}
+
+#par-1 {
+    width: 730px;
+}
+
+#par-2 {
+    width: 700px;
+}
+
+#learn-more-btn {
+    font-size: 12px;
+    margin-top: 45px;
+    font-weight: bold;
+    color: #4a9703;
+    border-color: #4a9703;
+    border: 2px solid;
+    background-color: white;
+    padding: 6px;
+    margin-left: 5px;
+}
+
+/* Sponsors Page */
+
+#section3 {
+    width: 100%;
+    background: white;
+}
+
+#section3 .sponsorimg{
+    height: 100%;
+    width: 180px;
+    padding: 30px;
+}
+
+#sponsorcontent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 110px;
+}
+
+/* Contact Us */
+
+#cont-us-container {
+    background-color: azure;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+#contact-us-text {
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+    position: absolute;
+    left: -60px;
+    margin-top: 43px;
+}
+
+#cont-us-left {
+    display: flex;
+    height: 100%;
+    width: 700px;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#cont-us-right {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    background-color: azure;
+    position: relative;
+    flex-direction: column;
+}
+
+.horiz-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-logos {
+    height: 13px;
+    width: 13px;
+    padding: 11px;
+    background-color: rgb(37, 37, 37);
+    filter: invert(100%);
+    margin-top: 8px;
+}
+
+#message-logo {
+    height: 13px;
+    width: 13px;
+    padding: 11px;
+    background-color:  rgb(37, 37, 37);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    filter: invert(100%);
+}
+
+#message-box {
+    position: relative;
+    margin-top: 8px;
+}
+
+#input-boxes-cont {
+    margin-top: 120px;
+    position: absolute;
+    left: -54px;
+}
+
+#first-name, #last-name, #type-email, #phone-numb {
+    width: 292px;
+    height: 35px;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding-left: 8px;
+}
+
+#message {
+    width: 635px;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    padding-bottom: 80px;
+    padding-left: 43px;
+    padding-top: 10px;
+}
+
+#first-name::placeholder, #last-name::placeholder, #type-email::placeholder, #phone-numb::placeholder, #message::placeholder {
+    color: #030148;
+    font-weight: 600;
+}
+
+#send-btn {
+    position: absolute;
+    left: -50px;
+    bottom: 70px;
+}
+
+#send-btn-design {
+    margin-right: 12px;
+    margin-left: 50em;
+    margin-top: 100;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    color: white;
+    transition: transform 0.1s;
+    display: flex;
+    align-items: center;
+    padding: 11px 27px 11px 27px;
+    background-color: #4a9703;
+    box-shadow: 0px 3px 0px #336a00;
+}
+
+#send-btn-design:hover {
+    transform:scale(1.02)
+}
+
+/* Footer */
+
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+  .footer-logo, .footer-links, .footer-help, .footer-contact {
+    width: 22%;
+}
+  .footer-logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+  h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  ul {
+    list-style: none;
+    padding: 0;
+}
+  ul li {
+    margin-bottom: 5px;
+}
+  ul li a {
+    text-decoration: none;
+    color: #333;
+}
+  .social-icons a img {
+    width: 20px;
+    margin-right: 10px;
+}
